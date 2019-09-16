@@ -39,7 +39,7 @@ a {
 }
 
 ul a:hover {
-    background: #e8f6d9;
+    background: #d1ecb4;
 }
 
 .start-container {
@@ -58,6 +58,7 @@ ul a:hover {
 
 a.button-ghost {
     background: #b0d785;
+    font-weight: 800;
     border: 1px solid black;
     color: #fff;
     padding: 20px;
@@ -65,6 +66,7 @@ a.button-ghost {
 
 a.button {
     background: #fff;
+    font-weight: 800;
     border: 1px solid black;
     color: #b0d785;
     text-decoration: none;
