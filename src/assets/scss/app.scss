@@ -1,12 +1,17 @@
 body {
-    background: url("../media/food-background-image-resize.jpg");
     font-family: 'Montserrat', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .content-container {
     background-color: #b0d785;
+    padding: 20px;
 }
 
 nav {
@@ -33,57 +38,107 @@ a {
     transition: all 0.2s ease;
 }
 
+ul a:hover {
+    background: #e8f6d9;
+}
+
 .start-container {
-    background: url("../media/start-here.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url("../media/kiwi-fruit.png");
+    background-repeat: repeat;
+    background-size: 25% 100%;
     text-align: center;
+    padding: 5px;
+    border: 10px solid #b0d785;
+}
+
+.healthy-start {
+    font-size: 25px;
+    font-weight: 800;
 }
 
 a.button-ghost {
     background: #b0d785;
     border: 1px solid black;
-    color: white;
+    color: #fff;
+    padding: 20px;
 }
 
 a.button {
-    background: white;
+    background: #fff;
     border: 1px solid black;
     color: #b0d785;
     text-decoration: none;
+    padding: 20px;
 }
 
 .buttons {
     display: flex;
     justify-content: space-evenly;
     text-decoration: none;
+    margin: 20px 10px;
 }
 
 a:hover {
-    background: #353e67;
-    border: 1px, solid white;
-    color: white;
+    background: #fff;
+    border: 1px, solid #fff;
+    color: #e8f6d9;
+}
+
+.main-content-container {
+    background: #e8f6d9;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .main-content-container {
+        flex-direction: row;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
 
 .works-container h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .menu-container h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.sub-content-container h3 {
+.plans h3 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .flex-row {
     display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .flex-row {
+        flex-direction: row;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
 
 .footer-container {
     background-color: #b0d785;
+    padding: 15px;
+}
+
+.grid-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-copyright {
+    text-align: center;
 }
 
 .fa {
@@ -100,20 +155,15 @@ a:hover {
 
 .fa-facebook {
     background: #3b5998;
-    color: white;
+    color: #fff;
 }
 
 .fa-twitter {
     background: #55acee;
-    color: white;
+    color: #fff;
 }
 
 .fa-instgram {
     background: #f0f;
-    color: white;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    color: #fff;
 }
